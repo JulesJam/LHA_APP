@@ -1,0 +1,25 @@
+#bottom_nav{
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  top: 93vh;
+}
+
+#social_icons{
+  float:left;
+}
+
+#social_icons ul{
+  margin: 0;
+  padding: 0;
+}
+
+#social_icons li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+#copyright{
+  float: right;
+
+}
