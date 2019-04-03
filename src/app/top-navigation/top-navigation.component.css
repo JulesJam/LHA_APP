@@ -3,6 +3,36 @@ li {
   width: 25%;
 }
 
-.menu_item{
+.active-link{
   border-bottom: inset;
 }
+
+.drop-down{
+  position: relative;
+  display: inline-block;
+}
+
+.drop-down-options a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-down-options{
+  display: none;
+  position: absolute;
+  background-color: rgba(164, 253, 50, 1.0);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop-down-options a:hover {
+  background-color: #ddd;
+  border-bottom: solid rgba(235, 235, 235, 1.0);
+}
+
+.drop-down:hover .drop-down-options {display: block;}
+
+.drop-down:hover .drop-down-title {background-color: #3e8e41;}
