@@ -1,8 +1,8 @@
 #main{
   width: 60vw;
   margin: 0 auto;
-  background-color: red;
   position: relative;
+  padding:0 5%;
 }
 
 @media only screen
@@ -12,5 +12,7 @@
   and (orientation: portrait) {
     #main {
       width: 100%;
+      padding:0 3%;
+      font-size: 14px
     }
   }

@@ -2,3 +2,7 @@ li {
   display: inline-block;
   width: 25%;
 }
+
+.menu_item{
+  border-bottom: inset;
+}

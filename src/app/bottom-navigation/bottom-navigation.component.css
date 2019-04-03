@@ -1,8 +1,9 @@
 #bottom_nav{
   position: absolute;
   height: 10vh;
-  width: 100%;
+  width: 60vw;
   top: 93vh;
+  border-top: solid rgba(235, 235, 235, 1.0);
 }
 
 #social_icons{
@@ -23,3 +24,15 @@
   float: right;
 
 }
+
+@media only screen
+  and (min-device-width: 319px) 
+  and (max-device-width: 790px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    #bottom_nav {
+      width: 90%;
+      padding:0 3%;
+      font-size: 14px
+    }
+  }
