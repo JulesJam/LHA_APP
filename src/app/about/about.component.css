@@ -1,0 +1,10 @@
+#about_main_container{
+  display: block;
+  height: 65vh;
+}
+
+p{
+  max-height: 100%;
+  overflow-y: auto;
+
+}
