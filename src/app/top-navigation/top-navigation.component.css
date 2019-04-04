@@ -4,6 +4,7 @@ li {
 }
 
 .active-link{
+  font-weight: bold;
   border-bottom: inset;
 }
 
@@ -13,7 +14,7 @@ li {
 }
 
 .drop-down-options a {
-  color: black;
+  color: rgba(173, 173, 173, 1.0);
   padding: 12px 16px;
   text-decoration: none;
   display: block;

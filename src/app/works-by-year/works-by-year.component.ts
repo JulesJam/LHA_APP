@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageSliderComponent } from '../image-slider/image-slider.component';
+
 
 @Component({
   selector: 'app-works-by-year',

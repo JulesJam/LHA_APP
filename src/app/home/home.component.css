@@ -1,3 +1,7 @@
 #main_image img{
   width: 100%;
 }
+
+#main_caption{
+  font-weight: bold;
+}

@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavigationComponent implements OnInit {
 
+  private optionSelected: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.optionSelected = false;
   }
 
 }
