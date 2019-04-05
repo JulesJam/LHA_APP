@@ -1,7 +1,28 @@
 #main_image img{
-  width: 100%;
+  display: block;
+  width: 73vh;
+  margin: 0 auto;
+  overflow-y: hidden;
+  
 }
 
 #main_caption{
+  display: block;
   font-weight: bold;
+  width: 75vh;
+  margin: 0 auto;
+  margin-top: 3vh;
 }
+
+@media only screen
+  and (min-device-width: 319px) 
+  and (max-device-width: 790px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+   #main_image img{
+     display: block;
+     width: 75vw;
+     margin: 0 auto;
+     
+   }
+  }

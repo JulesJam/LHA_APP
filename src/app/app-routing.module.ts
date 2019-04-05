@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ActivatedRoute } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {BlogComponent} from './blog/blog.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
 import { WorksByYearComponent } from './works-by-year/works-by-year.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
@@ -16,7 +18,11 @@ const routes: Routes = [
   {path: 'works-by-year', component: WorksByYearComponent},
 
 
-  {path: '', redirectTo: '/home', pathMatch: 'full' },
+  {path: '**',
+component: PageNotFoundComponent}
+
+
+  
   
 ];
 

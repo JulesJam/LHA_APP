@@ -18,6 +18,7 @@ import { BlogComponent } from './blog/blog.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
 import { ContactComponent } from './contact/contact.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ImageSliderComponent } from './image-slider/image-slider.component';
     BlogComponent,
     InstagramFeedComponent,
     ContactComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
