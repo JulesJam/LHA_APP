@@ -34,7 +34,9 @@ li {
   border-bottom: solid rgba(235, 235, 235, 1.0);
 }
 
-.drop-down:hover .drop-down-options {display: block;}
+/*.drop-down:hover .drop-down-options {display: block;}*/
+
+.displayMenu .drop-down-options {display: block;}
 
 .drop-down:hover .drop-down-title {background-color: #3e8e41;}
 
