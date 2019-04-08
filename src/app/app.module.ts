@@ -20,6 +20,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
+//update to path location strategy once backend is oprative
+
 @NgModule({
   declarations: [
     AppComponent,

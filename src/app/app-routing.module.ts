@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ActivatedRoute } from '@angular/router';
+import { LocationStrategy, HashLocationStrategy, APP_BASE_HREF } from '@angular/common';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
@@ -28,6 +29,11 @@ component: PageNotFoundComponent}
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+  { provide: LocationStrategy, useClass: HashLocationStrategy},
+  { provide: APP_BASE_HREF, useValue: '/'}
+  ]
+  
 })
 export class AppRoutingModule { }

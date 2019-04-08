@@ -8,20 +8,39 @@ import { Component, OnInit } from '@angular/core';
 export class TopNavigationComponent implements OnInit {
 
   worksMenuOpen: boolean;
-  message: string
+
 
 
   constructor() { }
 
   ngOnInit() {
    this.worksMenuOpen = false;
-   this.message = "apple";
   }
 
-  toggleMenu(): void {
+  toggleMenu(route): void {
 
-    this.worksMenuOpen =! this.worksMenuOpen;
-    this.worksMenuOpen? this.message = "fart" : this.message = "apple";
+    switch(route){
+      case 'none':
+      this.worksMenuOpen =! this.worksMenuOpen;
+      console.log('None', this.worksMenuOpen);
+      break;
+      case 'blog':
+      //route to blog
+      console.log('blog');
+      break;
+      case 'instagram':
+      //route to instagram
+      console.log('instagram');
+      break;
+      case 'worksByYears':
+      //route to works byyears
+      console.log('works by years');
+      break;
+      default:
+      this.worksMenuOpen =!this.worksMenuOpen;
+    }
+
+   
   }
 
 

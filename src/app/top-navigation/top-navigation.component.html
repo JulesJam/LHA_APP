@@ -2,13 +2,22 @@
   <li><a class='nostyle' routerLink="/home" routerLinkActive='active-link'>Home</a></li>
   <li><a class='nostyle' routerLink="/about" routerLinkActive='active-link'>About</a></li>
   <li>
-    <div class = 'drop-down' [ngClass] = "{displayMenu: worksMenuOpen}">
-      <div type='button' (click)="toggleMenu()" class ='drop-down-title' routerLinkActive='active-link' >Works {{message}}</div>
-      <div class ='drop-down-options'>
-        <a routerLink="/blog" routerLinkActive='active-link'>Blog</a>
-        <a routerLink="/instagram-feed" routerLinkActive='active-link'>Instagram</a>
-        <a routerLink="/works-by-year" routerLinkActive='active-link'>Works by years</a>
+    <div class = 'drop-down'>
+      <div type='button' (click)="toggleMenu('none')" class ='drop-down-title' routerLinkActive='active-link' >Works {{message}}</div>
+
+     <!--  each menu segment is a button to work with mobile -->
+      <div class ='drop-down-options' [ngClass] = "{'closeMenu': !worksMenuOpen}">
+        <div type='button' (click)="toggleMenu()">
+          <a routerLink="/blog" routerLinkActive='active-link'>Blog</a>
+        </div>
+        <div type='button' (click)="toggleMenu()">
+          <a routerLink="/instagram-feed" routerLinkActive='active-link'>Instagram</a>
+        </div>
+        <div type='button' (click)="toggleMenu()">
+          <a routerLink="/works-by-year" routerLinkActive='active-link'>Works by years</a>
+        </div>
       </div>
+      
     </div>
   </li>
   <li><a class='nostyle' routerLink="/contact" routerLinkActive='active-link'>Contact</a></li>
