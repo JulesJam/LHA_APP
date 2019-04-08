@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'top-navigation',
@@ -11,7 +12,7 @@ export class TopNavigationComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
    this.worksMenuOpen = false;
@@ -22,18 +23,21 @@ export class TopNavigationComponent implements OnInit {
     switch(route){
       case 'none':
       this.worksMenuOpen =! this.worksMenuOpen;
-      console.log('None', this.worksMenuOpen);
+      console.log('None', this.worksMenuOpen, route);
       break;
       case 'blog':
       //route to blog
+      this.changeRoute(route);
       console.log('blog');
       break;
-      case 'instagram':
+      case 'instagram-feed':
       //route to instagram
+      this.changeRoute(route);
       console.log('instagram');
       break;
-      case 'worksByYears':
+      case 'works-by-year':
       //route to works byyears
+      this.changeRoute(route);
       console.log('works by years');
       break;
       default:
@@ -41,6 +45,11 @@ export class TopNavigationComponent implements OnInit {
     }
 
    
+  }
+
+  changeRoute(route): void{
+    this.router.navigateByUrl(route);
+    this.worksMenuOpen =! this.worksMenuOpen;
   }
 
 

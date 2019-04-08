@@ -32,7 +32,7 @@ li {
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.05s; ;
 }
 
-.drop-down-options a {
+.drop-down-options .option {
   color: rgba(173, 173, 173, 1.0);
   padding: 12px 16px;
   text-decoration: none;
@@ -50,7 +50,7 @@ li {
 }
 
 
-.drop-down-options a:hover {
+.drop-down-options .option:hover {
   background-color: #ddd;
   border-bottom: solid rgba(235, 235, 235, 1.0);
 }
@@ -63,9 +63,10 @@ li {
 
 .drop-down:hover .drop-down-title {background-color: #3e8e41;}
 
-.closeMenu{
+/* may not need important to force closure of menu on mobile test both*/
+.closeMenu {
   background-color: red;
-  display: none;
+  display: none !important;
 }
 
 

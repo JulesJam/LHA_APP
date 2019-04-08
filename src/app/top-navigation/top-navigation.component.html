@@ -6,15 +6,15 @@
       <div type='button' (click)="toggleMenu('none')" class ='drop-down-title' routerLinkActive='active-link' >Works {{message}}</div>
 
      <!--  each menu segment is a button to work with mobile -->
-      <div class ='drop-down-options' [ngClass] = "{'closeMenu': !worksMenuOpen}">
-        <div type='button' (click)="toggleMenu()">
-          <a routerLink="/blog" routerLinkActive='active-link'>Blog</a>
+      <div class = 'drop-down-options' [ngClass] = "{'closeMenu': !worksMenuOpen}">
+        <div class='option' type='button' (click)="toggleMenu('blog')">
+         Blog
         </div>
-        <div type='button' (click)="toggleMenu()">
-          <a routerLink="/instagram-feed" routerLinkActive='active-link'>Instagram</a>
+        <div class = 'option' type='button' (click)="toggleMenu('instagram-feed')">
+         Instagram
         </div>
-        <div type='button' (click)="toggleMenu()">
-          <a routerLink="/works-by-year" routerLinkActive='active-link'>Works by years</a>
+        <div class= 'option' type='button' (click)="toggleMenu('works-by-year')">
+          Works by years
         </div>
       </div>
       
