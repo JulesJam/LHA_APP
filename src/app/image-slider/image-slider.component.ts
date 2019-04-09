@@ -46,4 +46,13 @@ export class ImageSliderComponent implements OnInit {
     ]
   }
 
+
+  // use this to display more info on a clicked image
+
+ 
+  showClickedImage(imageId){
+    console.log('ImageId', imageId);
+  }
+  
+
 }

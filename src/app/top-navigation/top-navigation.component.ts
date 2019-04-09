@@ -36,7 +36,7 @@ export class TopNavigationComponent implements OnInit {
       console.log('instagram');
       break;
       case 'works-by-year':
-      //route to works byyears
+      //route to works by years
       this.changeRoute(route);
       console.log('works by years');
       break;

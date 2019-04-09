@@ -14,4 +14,8 @@ export class WorksByYearComponent implements OnInit {
   ngOnInit() {
   }
 
+  showClickedImage(imageId){
+    console.log('ImageId', imageId);
+  }
+
 }
