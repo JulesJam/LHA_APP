@@ -1,6 +1,13 @@
 li {
   display: inline-block;
   width: 25%;
+  text-align: center;
+}
+
+li:hover{
+  background-color: rgba(218, 218, 218, 0.8);
+  border-radius: 3px;   
+  color:rgba(32, 163, 12, .8);
 }
 
 
@@ -14,6 +21,10 @@ li {
   position: relative;
   display: inline-block;
   
+}
+
+li .drop-down {
+  text-align: left;
 }
 
 
@@ -61,7 +72,11 @@ li {
 }
 
 
-.drop-down:hover .drop-down-title {background-color: #3e8e41;}
+.drop-down:hover .drop-down-title {
+  background-color: rgba(218, 218, 218, 0.8);
+  border-radius: 3px;   
+  color:rgba(32, 163, 12, .8);
+}
 
 /* may not need important to force closure of menu on mobile test both*/
 .closeMenu {
@@ -76,6 +91,12 @@ li {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   
-    .drop-down:active .drop-down-options {display: block;}
+    .drop-down:active .drop-down-options {
+      display: block;
+      background-color: rgba(218, 218, 218, 0.8);
+      border-radius: 3px;   
+      color:rgba(32, 163, 12, .8);
+
+    }
   
   }
