@@ -6,7 +6,7 @@ import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {BlogComponent} from './blog/blog.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
-import { WorksByYearComponent } from './works-by-year/works-by-year.component';
+import { ProjectGalleryComponent } from './project-gallery/project-gallery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'blog', component: BlogComponent},
   {path: 'instagram-feed', component: InstagramFeedComponent},
-  {path: 'works-by-year', component: WorksByYearComponent},
+  {path: 'project-gallery', component: ProjectGalleryComponent},
 
 
   {path: '**',

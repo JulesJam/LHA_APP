@@ -1,8 +1,10 @@
 body{
   background-color:
   rgba(247, 247, 247, 1.0);
+  background-image: url('/assets/backgrounds/kitchen roll 2.jpg');
   color:rgba(164, 253, 50, 1.0);
   font-family: 'Times new Roman';
+
 }
 
 a.nostyle:link {

@@ -13,7 +13,7 @@ import { BottomNavigationComponent } from './bottom-navigation/bottom-navigation
 import { TitleBarComponent } from './title-bar/title-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { WorksByYearComponent } from './works-by-year/works-by-year.component';
+import { ProjectGalleryComponent } from './project-gallery/project-gallery.component';
 import { BlogComponent } from './blog/blog.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
 import { ContactComponent } from './contact/contact.component';
@@ -30,7 +30,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TitleBarComponent,
     HomeComponent,
     AboutComponent,
-    WorksByYearComponent,
+    ProjectGalleryComponent,
     BlogComponent,
     InstagramFeedComponent,
     ContactComponent,

@@ -35,10 +35,10 @@ export class TopNavigationComponent implements OnInit {
       this.changeRoute(route);
       console.log('instagram');
       break;
-      case 'works-by-year':
+      case 'project-gallery':
       //route to works by years
       this.changeRoute(route);
-      console.log('works by years');
+      console.log('project gallery');
       break;
       default:
       this.worksMenuOpen =!this.worksMenuOpen;
