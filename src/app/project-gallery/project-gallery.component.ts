@@ -22,31 +22,31 @@ export class ProjectGalleryComponent implements OnInit {
 
     this.projects = [{
       id: 1,
-      imageUrl: '..assets/images/projects/hand decorated with love 2018/1.jpg',
+      imageUrl: '../assets/projects/hand decorated with love 2018/1.jpg',
       title: 'Hand Decorated With Love',
       year: 2018,
       blurb: this.blurb },
 
       {id: 2,
-      imageUrl: '..assets/images/projects/keeping up appearances 2017/1.jpg',
+      imageUrl: '../assets/projects/keeping up appearances 2017/1.jpg',
       title: 'Keeping up appearances 2017',
       year: 2017,
       blurb: this.blurb },
 
       {id: 3,
-      imageUrl: '..assets/images/projects/im not being rude 2017/1.jpg',
+      imageUrl: '../assets/projects/im not being rude 2017/1.jpg',
       title: `I'm not being rude`,
       year: 2017,
       blurb: this.blurb },
 
       {id: 4,
-      imageUrl: '..assets/images/projects/icing hides a multitude of sins 2019/1.jpg',
+      imageUrl: '../assets/projects/icing hides a multitude of sins 2019/1.jpg',
       title: 'Icing Hides A Multitude of Sins',
       year: 2019,
       blurb: this.blurb },
 
       {id: 5,
-      imageUrl: '..assets/images/projects/my mousetrap is nicer than your mousetrap 2017/1.jpg',
+      imageUrl: '../assets/projects/my mousetrap is nicer than your mousetrap 2017/1.jpg',
       title: 'My Mousetrap is Nicer Than Your Mousetrap 2017',
       year: 2017,
       blurb: this.blurb }
