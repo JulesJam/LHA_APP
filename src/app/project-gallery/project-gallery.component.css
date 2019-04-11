@@ -26,11 +26,6 @@
   left: 0;
 }
 
-#image_slider{
-  display: block;
-  margin-top: 14vh;
-}
-
 img {
   width: 450px;
   height: 280px;
@@ -41,7 +36,7 @@ img {
 
 .grid {
   margin: 0 auto;
-  z-index: -99;
+  
 }
 
 .grid_container {
@@ -112,7 +107,7 @@ img {
 
 .grid_img {
   position: relative;
-  pointer-events: none;
+  pointer-events: auto;
   border: 10px solid #fff;
 }
 
