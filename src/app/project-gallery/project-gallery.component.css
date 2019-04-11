@@ -1,4 +1,4 @@
-/** {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,11 +6,10 @@
 
 *:before, *:after {
   box-sizing: border-box;
-}*/
+}
 
 #project_selector{
   position: absolute;
-  width: 90%;
   height: 88vh;
   max-height: 88vh;
   display: block;
@@ -18,17 +17,18 @@
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 280px;
+  max-height: 280px;
   max-width: 100%;
   display: block;
 }
 
 .grid {
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
-.grid__container {
+.grid_container {
   display: grid;
   background-color: rgba(235, 235, 235, 0.4);
   border: 1px solid rgba(235, 235, 235, 1.0);
@@ -38,15 +38,31 @@ img {
   overflow: hidden;
 }
 
-.grid__item {
+.grid_item {
   position: relative;
 }
 
-.grid__item:hover {
-  background-color: #ff4b4c;
+.grid_caption {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 450px;
+  max-height: 18px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.grid__item:hover::after {
+.grid_caption :hover{
+  overflow: visible;
+}
+
+.grid_item:hover {
+  background-color: rgba(32, 163, 12, .8) ;
+}
+
+.grid_item:hover::after {
   content: 'Click for gallery';
   position: absolute;
   left: 50%;
@@ -57,35 +73,35 @@ img {
   font-weight: bold;
 }
 
-.grid__item:hover .grid__img::before {
+.grid_item:hover .grid_img::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background: rgba(154, 252, 44, 0.6);
+  background: rgba(32, 163, 12, .8);
 }
 
-.grid__item:hover .grid__img::after {
+.grid_item:hover .grid_img::after {
   content: '';
   display: block;
   position: absolute;
-  border: 1px solid #ff4b4c;
+  border: 1px solid rgba(32, 163, 12, .8);
   left: -11px;
   right: -11px;
   bottom: -11px;
   top: -11px;
 }
 
-.grid__img {
+.grid_img {
   position: relative;
   pointer-events: none;
   border: 10px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  .grid__container {
+  .grid_container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     max-width: 583px;
@@ -94,26 +110,13 @@ img {
 
 @media only screen and (min-width: 1024px) {
   
-  .grid__container {
-    grid-template-columns: repeat(4, 1fr);
+  .grid_container {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    max-width: 1165px;
+    max-width: 60vw;
   }
 }
 
 
 
 
-
-/*
-h1{
-  display: block;
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 5vh;
-}
-
-image-slider{
-  display: block;
-  margin-top: 10vh;
-}*/

@@ -1,8 +1,8 @@
 #bottom_nav{
   position: absolute;
-  height: 5vh;
+  height: 3vh;
   width: 60vw;
-  top: 93vh;
+  top: 99vh;
   border-top: solid rgba(235, 235, 235, 1.0);
   background-color: rgba(218, 218, 218, 0.7);
 }

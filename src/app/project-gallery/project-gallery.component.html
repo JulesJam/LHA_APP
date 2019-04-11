@@ -1,11 +1,13 @@
 <div id = 'project_selector'>
   <section class="grid">
-    <div class="grid__container">
-      <div class="grid__item" *ngFor="let project of projects">
-        <div class="grid__img">
-          <img src="{{project.imageUrl}}" alt="" title="{{project.title}}">      
+    <div class="grid_container">
+      <div class="grid_item" *ngFor="let project of projects">
+        <div class="grid_img">
+          <img src="{{project.imageUrl}}" alt="Image of {{project.title}}" title="{{project.title}}">      
         </div>
-        {{project.title}}
+        <div class = "grid_caption">
+          {{project.title}}
+        </div>
       </div>
     </div>
   </section>  
