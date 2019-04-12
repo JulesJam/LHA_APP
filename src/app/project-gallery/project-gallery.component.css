@@ -16,7 +16,7 @@
   overflow-y: auto;
 }
 
-#project_display{
+/*#project_display{
   position: absolute;
   background-color: rgba(173, 173, 173, .8);
   width: 100%;
@@ -24,7 +24,20 @@
   max-height: 88vh;
   top: 0;
   left: 0;
+}*/
+
+
+
+#image_slider_close_link{
+  margin: 10px auto;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(235, 235, 235, .7);
+  color: rgba(235, 235, 235, 1.0);
 }
+
+
 
 img {
   width: 450px;
@@ -74,7 +87,8 @@ img {
 }
 
 .grid_item:hover::after {
-  content: 'Click for gallery';
+  text-align: center;
+  content: 'Double-click for gallery';
   position: absolute;
   left: 50%;
   top: 50%;

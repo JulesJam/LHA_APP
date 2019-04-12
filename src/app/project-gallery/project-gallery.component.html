@@ -2,7 +2,7 @@
   <section class="grid">
     <div class="grid_container">
       <div class="grid_item" *ngFor="let project of projects">
-        <div class="grid_img" (click)= "displayToggle()">
+        <div class="grid_img" (dblclick)= "displayToggle()">
           <img  src="{{project.imageUrl}}" alt="Image of {{project.title}}" title="{{project.title}}"   >      
         </div>
         <div class = "grid_caption" >
@@ -11,8 +11,11 @@
       </div>
     </div>
   </section> 
-  <section [@changeDivSize]= displayProjectState>
-    <image-slider id="image_slider"></image-slider>
+  <section [@changeDivSize]= displayProjectState >
+    <image-slider></image-slider>
+    <div id = "image_slider_close_link" (click)= "displayToggle()">
+      Close
+    </div>
   </section> 
   
 </div>

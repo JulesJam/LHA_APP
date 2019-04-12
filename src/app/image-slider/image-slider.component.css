@@ -1,0 +1,25 @@
+#image_slider_main{
+  display: block;
+  margin-top: 18vh;
+}
+
+#project_title{
+  font-size: 20px;
+  font-weight: bold;
+  width: 80%;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+#project_blurb{
+  width: 80%;
+  max-width: 80%;
+  margin: 10px auto;
+  overflow-y: auto;
+}
+
+
+#image_slider_close_link :hover{
+  color: rgba(164, 253, 50, 1.0);
+}
+

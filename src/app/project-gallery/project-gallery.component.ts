@@ -22,8 +22,8 @@ import { ImageSliderComponent } from '../image-slider/image-slider.component';
        left: 0,
        zIndex: 100
       })),
-      transition('initial=>final', animate('1500ms')),
-      transition('final=>initial', animate('1000ms'))
+      transition('initial=>final', animate('100ms')),
+      transition('final=>initial', animate('100ms'))
     ]),
   ]
 
@@ -79,7 +79,6 @@ export class ProjectGalleryComponent implements OnInit {
   }
 
   displayToggle():  void {
-    console.log("Switching state -pgc l 83", this.displayProjectState);
     this.displayProjectState = this.displayProjectState === 'initial' ? 'final' : 'initial';
  
   }
