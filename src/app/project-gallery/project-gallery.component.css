@@ -88,7 +88,7 @@ img {
 
 .grid_item:hover::after {
   text-align: center;
-  content: 'Double-click for gallery';
+  content: 'Click for gallery';
   position: absolute;
   left: 50%;
   top: 50%;

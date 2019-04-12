@@ -2,7 +2,7 @@
   <section class="grid">
     <div class="grid_container">
       <div class="grid_item" *ngFor="let project of projects">
-        <div class="grid_img" (dblclick)= "displayToggle()">
+        <div class="grid_img" (click)= "displayToggle()">
           <img  src="{{project.imageUrl}}" alt="Image of {{project.title}}" title="{{project.title}}"   >      
         </div>
         <div class = "grid_caption" >
