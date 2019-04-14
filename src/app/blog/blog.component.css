@@ -1,6 +1,9 @@
 iframe{
-  width: 100%;
+  display: block;
+  width: 60%;
   height: 73vh;
+  margin: 10px auto;
+  border: none;
 
 }
 

@@ -1,18 +1,18 @@
 <div id = "project_selector">
   <section class="grid">
     <div class="grid_container">
-      <div class="grid_item" *ngFor="let project of projects">
-        <div class="grid_img" (click)= "displayToggle()">
-          <img  src="{{project.imageUrl}}" alt="Image of {{project.title}}" title="{{project.title}}"   >      
+      <div class="grid_item" *ngFor="let project of projects" #projectBox >
+        <div class="grid_img" (click)= "displayToggle(project)" >
+          <img  src="{{project.imageUrl}}" alt="Image of {{project.title}}" title="{{project.title}}"  >      
         </div>
         <div class = "grid_caption" >
-          {{message}}
+          {{project.title}}
         </div>
       </div>
     </div>
   </section> 
-  <section [@changeDivSize]= displayProjectState >
-    <image-slider></image-slider>
+  <section id = "project_display" [ngStyle] = "{top: projectDisplayTopCoOrdinate }" [ngClass] = "{'projectDetailsHidden': displayProjectState != 'open'}">
+    <image-slider [imageObject] = projectToDisplay></image-slider>
     <div id = "image_slider_close_link" (click)= "displayToggle()">
       Close
     </div>

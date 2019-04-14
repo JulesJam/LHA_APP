@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 import { NgImageSliderModule } from 'ng-image-slider';
 
 
@@ -10,14 +10,16 @@ import { NgImageSliderModule } from 'ng-image-slider';
 export class ImageSliderComponent implements OnInit {
 
 
-  private imageObject: Array<object>;
+
+  @Input() imageObject: Array<object>;
+
 
 
   constructor() { }
 
   ngOnInit() {
 
-   this.imageObject = [
+  /* this.imageObject = [
       {image: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
       thumbImage: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
       title: `Https example`
@@ -42,8 +44,7 @@ export class ImageSliderComponent implements OnInit {
       thumbImage: 'assets/images/slider/4-min.jpg',
       title: `Jam Dodgers anyone - media biscuit`
       }
-
-    ]
+    ]*/
   }
 
 
