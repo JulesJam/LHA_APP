@@ -12,7 +12,7 @@
     </div>
   </section> 
   <section id = "project_display" [ngStyle] = "{top: projectDisplayTopCoOrdinate }" [ngClass] = "{'projectDetailsHidden': displayProjectState != 'open'}">
-    <image-slider [imageObject] = projectToDisplay></image-slider>
+    <image-slider [project] = project></image-slider>
     <div id = "image_slider_close_link" (click)= "displayToggle()">
       Close
     </div>

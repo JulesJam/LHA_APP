@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild} from '@angular/core';
 import { ImageSliderComponent } from '../image-slider/image-slider.component';
+import { Project } from '../project';
 
 
 
@@ -12,12 +13,13 @@ import { ImageSliderComponent } from '../image-slider/image-slider.component';
 })
 export class ProjectGalleryComponent implements OnInit {
 
-  private projects: Array<{id: number, imageUrl: string, title: string, year: number, blurb: string, images: Array<object>}>;
+  private projects: Array<Project>;
 
   private blurb: string;
   private displayProjectState: string;
   private projectDisplayTopCoOrdinate: string;
   private projectToDisplay: Array<any>;
+  private project: Project;
   
 
   @ViewChild('projectBox') projectBox: ElementRef;
@@ -35,7 +37,7 @@ export class ProjectGalleryComponent implements OnInit {
    
 
     this.projects = [{
-      id: 1,
+      _id: 1,
       imageUrl: '../assets/projects/hand decorated with love 2018/1.jpg',
       title: 'Hand Decorated With Love',
       year: 2018,
@@ -67,7 +69,7 @@ export class ProjectGalleryComponent implements OnInit {
         }]
       },
 
-      {id: 2,
+      {_id: 2,
       imageUrl: '../assets/projects/keeping up appearances 2017/1.jpg',
       title: 'Keeping up appearances 2017',
       year: 2017,
@@ -99,7 +101,7 @@ export class ProjectGalleryComponent implements OnInit {
         }]
       },
   
-      {id: 3,
+      {_id: 3,
       imageUrl: '../assets/projects/im not being rude 2017/1.jpg',
       title: `I'm not being rude`,
       year: 2017,
@@ -131,7 +133,7 @@ export class ProjectGalleryComponent implements OnInit {
         }]
       },
   
-      {id: 4,
+      {_id: 4,
       imageUrl: '../assets/projects/icing hides a multitude of sins 2019/1.jpg',
       title: 'Icing Hides A Multitude of Sins',
       year: 2019,
@@ -163,7 +165,7 @@ export class ProjectGalleryComponent implements OnInit {
         }]
       },
 
-      {id: 5,
+      {_id: 5,
       imageUrl: '../assets/projects/my mousetrap is nicer than your mousetrap 2017/1.jpg',
       title: 'My Mousetrap is Nicer Than Your Mousetrap 2017',
       year: 2017,
@@ -203,6 +205,7 @@ export class ProjectGalleryComponent implements OnInit {
 
     if(project){
       this.projectToDisplay = project.images;
+      this.project = project;
 
       //Here I we get the position of clicked image to position the image slider in the viewable part of the viewport otherwise it can be located of screen especially on mobile
       const clickedProjectPosition = this.projectBox.nativeElement.getBoundingClientRect().top;
