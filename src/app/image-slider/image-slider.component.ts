@@ -15,6 +15,7 @@ export class ImageSliderComponent implements OnInit {
   private imageObject: Array<object>;
 
   @Input() project: Project;
+  private infinite: boolean;
 
 
 
@@ -23,6 +24,8 @@ export class ImageSliderComponent implements OnInit {
   constructor() { }
 
   ngOnChanges(){
+
+    this.infinite = true;
     
     if(this.project){
       this.imageObject = this.project.images}

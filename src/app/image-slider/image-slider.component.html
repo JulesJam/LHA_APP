@@ -2,7 +2,7 @@
   <div id="project_title">
     {{project.title}}
   </div>
-  <ng-image-slider [images]="imageObject" #nav  (imageClick)=showClickedImage($event)></ng-image-slider>
+  <ng-image-slider [images]="imageObject" [infinite]=infinite #nav  (imageClick)=showClickedImage($event)></ng-image-slider>
   <div id="project_blurb">
     {{project.blurb}}
   </div>

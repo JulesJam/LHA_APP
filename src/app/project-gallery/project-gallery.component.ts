@@ -43,30 +43,26 @@ export class ProjectGalleryComponent implements OnInit {
       year: 2018,
       blurb: 'All about decorating things by hand in a lovely way that shows how loevly things are etc',
       images: [
-        {image: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        thumbImage: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        title: `Https example`
+        {image: '../assets/projects/hand decorated with love 2018/1.jpg',
+        thumbImage: '../assets/projects/hand decorated with love 2018/1.jpg',
+        title: `Decorated Roll - 1`
         },
 
-        {image: 'assets/images/slider/1.jpg',
-        thumbImage: 'assets/images/slider/1-min.jpg',
-        title: `Tea and doillies - mixed media`
+        {image: '../assets/projects/hand decorated with love 2018/2.jpg',
+        thumbImage: '../assets/projects/hand decorated with love 2018/2.jpg',
+        title: `Decorated Roll - front`
         },
   
-        {image: 'assets/images/slider/2.jpg',
-        thumbImage: 'assets/images/slider/2-min.jpg',
-        title: `Buntings out - mixed media`
+        {image: '../assets/projects/hand decorated with love 2018/3.jpg',
+        thumbImage: '../assets/projects/hand decorated with love 2018/3.jpg',
+        title: `Decorated Roll - close up`
         },
   
-        {image: 'assets/images/slider/3.jpg',
-        thumbImage: 'assets/images/slider/3-min.jpg',
-        title: `Who's wrong now - mixed media`
-        },
-  
-        {image: 'assets/images/slider/4.jpg',
-        thumbImage: 'assets/images/slider/4-min.jpg',
-        title: `Jam Dodgers anyone - media biscuit`
-        }]
+        {image: '../assets/projects/hand decorated with love 2018/4.jpg',
+        thumbImage: '../assets/projects/hand decorated with love 2018/4.jpg',
+        title: `Decorated Roll - close up side`
+        }
+      ]
       },
 
       {_id: 2,
@@ -75,30 +71,26 @@ export class ProjectGalleryComponent implements OnInit {
       year: 2017,
       blurb: 'All about keeping up appearenaces and keeping them up and lovely things etc etc',
       images: [
-        {image: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        thumbImage: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        title: `Https example`
+        {image: '../assets/projects/keeping up appearances 2017/1.jpg',
+        thumbImage: '../assets/projects/keeping up appearances 2017/1.jpg',
+        title: `Through a blind - 1`
         },
 
-        {image: 'assets/images/slider/1.jpg',
-        thumbImage: 'assets/images/slider/1-min.jpg',
-        title: `Tea and doillies - mixed media`
+        {image: '../assets/projects/keeping up appearances 2017/2.jpg',
+        thumbImage: '../assets/projects/keeping up appearances 2017/2.jpg',
+        title: `Through a blind - 2`
         },
   
-        {image: 'assets/images/slider/2.jpg',
-        thumbImage: 'assets/images/slider/2-min.jpg',
-        title: `Buntings out - mixed media`
+        {image: '../assets/projects/keeping up appearances 2017/3.jpg',
+        thumbImage: '../assets/projects/keeping up appearances 2017/3.jpg',
+        title: `Welcoming table on a street`
         },
   
-        {image: 'assets/images/slider/3.jpg',
-        thumbImage: 'assets/images/slider/3-min.jpg',
-        title: `Who's wrong now - mixed media`
-        },
-  
-        {image: 'assets/images/slider/4.jpg',
-        thumbImage: 'assets/images/slider/4-min.jpg',
-        title: `Jam Dodgers anyone - media biscuit`
-        }]
+        {image: '../assets/projects/keeping up appearances 2017/4.jpg',
+        thumbImage: '../assets/projects/keeping up appearances 2017/4.jpg',
+        title: `Welcoming table aeriel shot`
+        }
+      ]
       },
   
       {_id: 3,
@@ -107,30 +99,35 @@ export class ProjectGalleryComponent implements OnInit {
       year: 2017,
       blurb: 'All about not being rude and not rude things and loevly things etc etc',
       images: [
-        {image: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        thumbImage: 'https://www.thespruceeats.com/thmb/tgxI0NzJiPkJbPEbxYrD3r2tJ_Y=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/9.BakingaChocolateCakeIced_preview-5b0eeb5d30371300373a5beb.jpeg',
-        title: `Https example`
+        {image: '../assets/projects/im not being rude 2017/1.jpg',
+        thumbImage: '../assets/projects/im not being rude 2017/1.jpg',
+        title: `The Table`
         },
 
-        {image: 'assets/images/slider/1.jpg',
-        thumbImage: 'assets/images/slider/1-min.jpg',
-        title: `Tea and doillies - mixed media`
+        {image: '../assets/projects/im not being rude 2017/2.jpg',
+        thumbImage: '../assets/projects/im not being rude 2017/2.jpg',
+        title: `Close Up of Bunting and Balloons`
         },
   
-        {image: 'assets/images/slider/2.jpg',
-        thumbImage: 'assets/images/slider/2-min.jpg',
-        title: `Buntings out - mixed media`
+        {image: '../assets/projects/im not being rude 2017/3.jpg',
+        thumbImage: '../assets/projects/im not being rude 2017/3.jpg',
+        title: `The Cell`
         },
   
-        {image: 'assets/images/slider/3.jpg',
-        thumbImage: 'assets/images/slider/3-min.jpg',
-        title: `Who's wrong now - mixed media`
+        {image: '../assets/projects/im not being rude 2017/4.jpg',
+        thumbImage: '../assets/projects/im not being rude 2017/4.jpg',
+        title: `Close up of table`
         },
   
-        {image: 'assets/images/slider/4.jpg',
-        thumbImage: 'assets/images/slider/4-min.jpg',
-        title: `Jam Dodgers anyone - media biscuit`
-        }]
+        {image: '../assets/projects/im not being rude 2017/5.jpg',
+        thumbImage: '../assets/projects/im not being rude 2017/5.jpg',
+        title: `What are you moaning about...`
+        },
+        {image: '../assets/projects/im not being rude 2017/6.jpg',
+        thumbImage:'../assets/projects/im not being rude 2017/6.jpg',
+        title: `The door`
+        }
+      ]
       },
   
       {_id: 4,

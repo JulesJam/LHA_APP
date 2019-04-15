@@ -18,3 +18,12 @@ a.nostyle:visited {
     color: inherit;
     cursor: auto;
 }
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    margin: 0;
+    padding-left: 10px;
+    padding-right:10px;
+  }
+}
