@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, AfterViewInit } from '@angular/core';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { Project } from '../project';
 
@@ -8,11 +8,12 @@ import { Project } from '../project';
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.css']
 })
-export class ImageSliderComponent implements OnInit {
+export class ImageSliderComponent {
 
 
 
-  private imageObject: Array<object>;
+  private images: Array<object>;
+  private background: String;
 
   @Input() project: Project;
   private infinite: boolean;
@@ -21,31 +22,26 @@ export class ImageSliderComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnChanges(){
 
     this.infinite = true;
     
     if(this.project){
-      this.imageObject = this.project.images}
-    else {
-      this.imageObject = [];
+      this.images = this.project.images;
+      this.background = this.project.imageUrl;
     }
+    else {
+      this.images = [{}];
+    }
+
+    console.log("this images ",this.images)
   }
 
-  ngOnInit() {
-    this.project = {
-      _id: null,
-      imageUrl: '',
-      title: '',
-      year: null,
-      blurb: 'string',
-      images: []
-    };
-    this.imageObject = [{}];
-
-  }
+ 
 
 
   // use this to display more info on a clicked image

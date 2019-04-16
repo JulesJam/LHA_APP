@@ -1,4 +1,62 @@
-#image_slider_main{
+/*testing home built image slider*/
+
+#gallery_container{
+  position: relative;
+  margin: 50px auto;
+ 
+ 
+  color: #fff;
+  text-align: center;
+  display: block;
+
+  min-height: 500px;
+  min-width:500px;
+  max-height: 500px;
+  max-width:500px;
+  overflow:hidden;
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  
+
+  width: 100px;
+  border-radius: 5%;
+}
+
+#gallery{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 500px;
+  width: 2500px;
+  transition: all 15s linear;
+}
+
+
+
+
+img{
+  display: block;
+  border-left: solid white 2px;
+  border-right: solid white 2px;
+  float: left;
+  min-width: 496px;
+  min-height: 500px;
+  max-width: 496px;
+  max-height: 500px;
+}
+
+
+
+
+#gallery:hover{
+  left: -2000px;
+  
+  
+}
+
+/*#image_slider_main{
   display: block;
   margin-top: 5vh;
 }
@@ -21,5 +79,5 @@
 
 #image_slider_close_link :hover{
   color: rgba(164, 253, 50, 1.0);
-}
+}*/
 

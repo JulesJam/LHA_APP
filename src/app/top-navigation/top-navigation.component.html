@@ -1,24 +1,24 @@
 <ul>
   <li><a class='nostyle' routerLink="/home" routerLinkActive='active-link'>Home</a></li>
-  <li><a class='nostyle' routerLink="/about" routerLinkActive='active-link'>About</a></li>
   <li>
     <div class = 'drop-down'>
       <div type='button' (click)="toggleMenu('none')" class ='drop-down-title' routerLinkActive='active-link' >Works {{message}}</div>
 
      <!--  each menu segment is a button to work with mobile -->
       <div class = 'drop-down-options' [ngClass] = "{'closeMenu': !worksMenuOpen}">
+        <div class= 'option' type='button' (click)="toggleMenu('project-gallery')">
+          Work
+        </div>
         <div class='option' type='button' (click)="toggleMenu('blog')">
          Blog
         </div>
         <div class = 'option' type='button' (click)="toggleMenu('instagram-feed')">
          Instagram
         </div>
-        <div class= 'option' type='button' (click)="toggleMenu('project-gallery')">
-          Project Gallery
-        </div>
       </div>
       
     </div>
   </li>
+  <li><a class='nostyle' routerLink="/about" routerLinkActive='active-link'>About</a></li>
   <li><a class='nostyle' routerLink="/contact" routerLinkActive='active-link'>Contact</a></li>
 </ul>

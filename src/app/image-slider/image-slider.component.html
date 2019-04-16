@@ -1,4 +1,4 @@
-<div id = "image_slider_main">
+<!-- <div id = "image_slider_main">
   <div id="project_title">
     {{project.title}}
   </div>
@@ -6,4 +6,12 @@
   <div id="project_blurb">
     {{project.blurb}}
   </div>
-</div>
+</div> -->
+<div id = "gallery_container" >
+  <img src = {{background}}>
+  <div id = 'gallery'>
+    <div *ngFor = "let image of images">
+      <img src="{{image.image}}">
+    <div>
+  </div>
+<div>
